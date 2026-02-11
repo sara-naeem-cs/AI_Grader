@@ -10,10 +10,12 @@
     <div class="container">
         <h1>Upload Files</h1>
 
-        <form action="http://127.0.0.1:8000/submit" method="post" enctype="multipart/form-data">
+        <!--<form action="http://127.0.0.1:8000/submit" method="post" enctype="multipart/form-data">-->
+        <form id="uploadForm" enctype="multipart/form-data">
+
             <label for="assignment">Upload Assignment (PDF)</label>
             <input type="file" id="assignment" name="assignment" accept="application/pdf" required />
-            
+
             <br>
 
             <label for="rubric">Upload Rubric (PDF)</label>
@@ -24,6 +26,9 @@
             <button type="submit">Submit for Evaluation</button>
         </form>
     </div>
+    <h2>Results</h2>
+    <h4 id="result"></h4>
+    <script src="./script.js"></script>
 </body>
 
 </html>

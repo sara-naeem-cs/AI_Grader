@@ -1,4 +1,5 @@
 from fastapi import FastAPI, File, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
 import pdfplumber
 
 from openai import OpenAI
@@ -23,6 +24,14 @@ MAX_CHARS_RUBRIC = 3000
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 def extract_text(pdf_file):
     text = ""
@@ -39,6 +48,7 @@ def size_limit_assignment(assignment_text):
         assignment_text = assignment_text[:MAX_CHARS_ASSIGNMENT]
     else:
         assignment_text = ""
+    return assignment_text
 
 
 def size_limit_rubric(rubric_text):
@@ -46,6 +56,7 @@ def size_limit_rubric(rubric_text):
         rubric_text = rubric_text[:MAX_CHARS_RUBRIC]
     else:
         rubric_text = ""
+    return rubric_text
 
 
 @app.post("/submit")

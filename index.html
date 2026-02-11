@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignment & Rubric Upload</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Files</h1>
+
+        <form action="http://127.0.0.1:8000/submit" method="post" enctype="multipart/form-data">
+            <label for="assignment">Upload Assignment (PDF)</label>
+            <input type="file" id="assignment" name="assignment" accept="application/pdf" required />
+            
+            <br>
+
+            <label for="rubric">Upload Rubric (PDF)</label>
+            <input type="file" id="rubric" name="rubric" accept="application/pdf" required />
+
+            <br>
+
+            <button type="submit">Submit for Evaluation</button>
+        </form>
+    </div>
+</body>
+
+</html>

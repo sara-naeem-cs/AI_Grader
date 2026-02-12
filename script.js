@@ -1,5 +1,5 @@
 document.getElementById("uploadForm").addEventListener("submit", async function (e) {
-    e.preventDefault(); // 🚨 prevent page reload
+    e.preventDefault(); 
 
     const formData = new FormData(this);
 

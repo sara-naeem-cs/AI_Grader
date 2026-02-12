@@ -88,6 +88,12 @@ async def submit(assignment: UploadFile = File(...), rubric: UploadFile = File(.
     - All suggestions MUST directly correspond to a rubric category where points were deducted and the content included in the assignment.
     - If a rubric category received full marks, do NOT suggest improvements related to it.
     - Base feedback strictly on what is written in the assignment.
+    - Calculate max_points strictly from the rubric.
+    - If a rubric in breakdown, if the category receives full marks, the "feedback" for that category MUST be "No feedback".
+    - Do NOT provide praise, explanation, or commentary for full-mark categories.
+    - First calculate the sum of all category scores.
+    - Then format "total_score" as "sum_earned_points/max_points".
+    - Do NOT guess or estimate totals.
 
     Tasks:
     1. Score the assignment strictly using the rubric.
@@ -96,7 +102,7 @@ async def submit(assignment: UploadFile = File(...), rubric: UploadFile = File(.
     4. Return ONLY valid JSON in this format, with proper quotes and no extra text:
 
     {{
-    "total_score": number,
+    "total_score": string,  // formatted exactly like "17/20",
     "breakdown": {{
         "CategoryName": {{
         "score": number,

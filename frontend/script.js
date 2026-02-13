@@ -54,7 +54,6 @@ function getSuggestedFixesElement(suggestedFixes) {
 
 
 function renderResults(resultElement, result) {
-    console.log(result)
     const [score, maxTotal] = result.total_score.split("/");
     const totalScore = Number(score);
     const maxTotalNum = Number(maxTotal);
@@ -90,7 +89,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
 
     resultElement.innerText = "Grading...";
     try {
-        const response = await fetch("http://127.0.0.1:8000/grade", {
+        const response = await fetch(`http://127.0.0.1:8000/grade`, {
             method: "POST",
             body: formData
         });

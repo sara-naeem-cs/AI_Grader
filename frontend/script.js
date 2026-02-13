@@ -90,7 +90,7 @@ document.getElementById("uploadForm").addEventListener("submit", async function 
 
     resultElement.innerText = "Grading...";
     try {
-        const response = await fetch("http://127.0.0.1:8000/submit", {
+        const response = await fetch("http://127.0.0.1:8000/grade", {
             method: "POST",
             body: formData
         });

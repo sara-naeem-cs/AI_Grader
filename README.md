@@ -27,6 +27,8 @@ The AI Grader:
 - You can try it using the examples in the `examples` folder.
 - The app may take up to a minute to load (cold start).
 
+![AI Grader](https://github.com/user-attachments/assets/10ccade6-2008-4c1e-853c-10f1db7b4f2e)
+
 ---
 
 ## Built With

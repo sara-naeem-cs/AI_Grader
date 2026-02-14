@@ -42,4 +42,8 @@ The AI Grader:
 
 ## Why This Project?
 
+Most existing AI grading tools are either paid services or provide generic feedback without strictly following a teacher’s rubric. In schools, teachers rely on detailed rubrics to ensure assignments are graded fairly and consistently across specific criteria.
+
+This AI Grader addresses that gap by grading assignments directly against a provided rubric. It generates a clear breakdown of scores by category and offers targeted suggestions for improvement—closely mimicking how a teacher evaluates student work.
+
 This project explores how AI can support educators by reducing grading workload while increasing consistency and transparency. At the same time, it helps students better understand grading criteria and improve their work before submission.

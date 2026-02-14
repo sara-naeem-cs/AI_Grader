@@ -6,19 +6,6 @@ To help address this, I built an **AI Grader** that provides consistent, rubric-
 
 ---
 
-## Features
-
-The AI Grader:
-
-- Accepts a **rubric file** (bullet-point or table format)
-- Accepts an **assignment file**
-- Returns:
-  - A detailed score breakdown
-  - Clear reasoning behind each score
-  - Actionable suggestions for improvement
-
----
-
 ## Demo
 
 🔗 https://ai-grader-180.onrender.com/
@@ -28,6 +15,19 @@ The AI Grader:
 - The app may take up to a minute to load (cold start).
 
 ![AI Grader](https://github.com/user-attachments/assets/3499bf14-c0ff-4f92-818b-b29e3693ddeb)
+
+---
+
+## Features
+
+The AI Grader:
+
+- Accepts a **rubric file** (bullet-point or table format)
+- Accepts an **assignment file**
+- Returns:
+  - A detailed score breakdown
+  - Rubric backed score explainations
+  - Suggestions for improvement
 
 ---
 

@@ -32,6 +32,7 @@ app.include_router(router)
 async def root():
     return FileResponse(os.path.join(frontend_path, "index.html"))
 
+"""
 if __name__ == "__main__":
     import uvicorn
 
@@ -43,4 +44,4 @@ if __name__ == "__main__":
 
     port = int(os.environ.get("PORT", 8000))  # dynamic port for Render
     uvicorn.run(app, host="0.0.0.0", port=port)
-"""
+

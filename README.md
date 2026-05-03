@@ -15,6 +15,8 @@ To help address this, I built an **AI Grader** that provides consistent, rubric-
 - The app may take up to a minute to load (cold start).
 
 ![AI Grader](https://github.com/user-attachments/assets/3499bf14-c0ff-4f92-818b-b29e3693ddeb)
+(You can use sample rubric and assignment files from here to test it out: https://github.com/sara-naeem-cs/AI_Grader/tree/main/examples)
+
 
 ---
 

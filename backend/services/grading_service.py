@@ -51,7 +51,7 @@ def grade_assignment(assignment_text, rubric_text):
 
     response = client.responses.create(
         input=prompt,
-        model="llama-3.1-8b-instant",
+        model="openai/gpt-oss-20b",
         temperature=0
     )
 
